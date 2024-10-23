@@ -35,9 +35,9 @@ public class SimpleCharacterController : MonoBehaviour
         movementVector *= (moveSpeed * Time.deltaTime);
         controller.Move(movementVector);
 
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        if (Input.GetButtonDown("Jump"))
         {
-            velocity.y = Mathf.Sqrt(jumpForce * 2f * gravity);
+            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
     }
 
