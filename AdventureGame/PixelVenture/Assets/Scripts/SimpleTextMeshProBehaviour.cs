@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Globalization;
 
-[RequireComponent(typeof(TextMeshPro))]
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class SimpleTextMeshProBehaviour : MonoBehaviour
 {
     private TextMeshProUGUI textObj;
@@ -16,8 +16,12 @@ public class SimpleTextMeshProBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
+    public void Update()
+    {
+        UpdateWithIntData();
+    }
     public void UpdateWithIntData()
     {
-        textObj.text = dataObj.value.ToString(CultureInfo.InvariantCulture);
+        textObj.text = "Score: " + dataObj.value.ToString(CultureInfo.InvariantCulture);
     }
 }

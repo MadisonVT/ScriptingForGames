@@ -1,9 +1,9 @@
 using UnityEngine;
 
-//[CreateAssetMenu(menuName = "Single Variables/SimpleIntData")]
-public class SimpleIntData : MonoBehaviour
+[CreateAssetMenu(menuName = "Single Variables/SimpleIntData")]
+public class SimpleIntData : ScriptableObject
 {
-    public float value;
+    public int value;
 
     public void UpdateValue(int amount)
     {
