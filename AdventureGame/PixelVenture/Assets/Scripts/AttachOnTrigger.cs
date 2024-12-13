@@ -9,10 +9,4 @@ public class AttachOnTrigger : MonoBehaviour
      {
          transform.parent = other.transform;
      }
-
-    // Update is called once per frame
-    public void OnTriggerExit(Collider other)
-    {
-        transform.parent = null;
-    }
 }
