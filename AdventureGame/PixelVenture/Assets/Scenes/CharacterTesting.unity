@@ -8582,6 +8582,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2443307251088749661, guid: ebfe270bd49c2814f89a64ac0f04c075, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1221926679}
+    - targetCorrespondingSourceObject: {fileID: 2443307251088749661, guid: ebfe270bd49c2814f89a64ac0f04c075, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1221926680}
   m_SourcePrefab: {fileID: 100100000, guid: ebfe270bd49c2814f89a64ac0f04c075, type: 3}
 --- !u!1 &1221926674 stripped
 GameObject:
@@ -8621,6 +8624,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a50fbebe0cdb084cb593674edcbbc0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1221926680
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221926674}
+  serializedVersion: 4
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1249635656
 GameObject:
   m_ObjectHideFlags: 0
@@ -9036,6 +9066,7 @@ GameObject:
   - component: {fileID: 1586791625}
   - component: {fileID: 1586791626}
   - component: {fileID: 1586791627}
+  - component: {fileID: 1586791628}
   m_Layer: 0
   m_Name: CharacterController
   m_TagString: Untagged
@@ -9172,6 +9203,19 @@ MonoBehaviour:
           m_StringArgument: OffTrigger
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1586791628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586791622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc4976274f98104599a04c03aaa4eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: {fileID: 11400000, guid: b54074b7be5340449962b33f69e8614c, type: 2}
 --- !u!1 &1597113855
 GameObject:
   m_ObjectHideFlags: 0
@@ -14587,6 +14631,7 @@ GameObject:
   - component: {fileID: 1929475941}
   - component: {fileID: 1929475943}
   - component: {fileID: 1929475942}
+  - component: {fileID: 1929475944}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -14692,6 +14737,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1929475943}
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Off
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1221926674}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14809,6 +14866,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.16, y: 0.32, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1929475944
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929475937}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1978633154
 PrefabInstance:
   m_ObjectHideFlags: 0
