@@ -457,19 +457,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7952214245746170255, guid: 0be8b836d619a0740a21f9f47db27a40, type: 3}
   m_PrefabInstance: {fileID: 1978633154}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &131296825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131296813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2466cebc18cc9e04ea6a35bb5e2f94a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleAmount: 10
 --- !u!199 &131296826
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5267,6 +5254,22 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &131296828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131296813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2466cebc18cc9e04ea6a35bb5e2f94a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstEmissionAmount: 10
+  secondEmissionAmount: 20
+  thirdEmissionAmount: 30
+  delayBetweenEmissions: 0.5
 --- !u!1 &188866965
 GameObject:
   m_ObjectHideFlags: 0
@@ -14619,7 +14622,7 @@ PrefabInstance:
       addedObject: {fileID: 131296826}
     - targetCorrespondingSourceObject: {fileID: 5663382836810607720, guid: 0be8b836d619a0740a21f9f47db27a40, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 131296825}
+      addedObject: {fileID: 131296828}
   m_SourcePrefab: {fileID: 100100000, guid: 0be8b836d619a0740a21f9f47db27a40, type: 3}
 --- !u!1 &1984812786
 GameObject:
